@@ -1,0 +1,21 @@
+<h1>New Vendor?</h1>
+
+<%= form_for :vendor do |f| %>
+  <p>
+    <%= f.label :business %><br>
+    <%= f.text_field :business %>
+  </p>
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <%= f.label :products %> <br>
+    <%= f.text_area :products %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<%end%>

@@ -1,0 +1,27 @@
+<h1> List of Farmers Market </h1>
+
+<%= form_for :market, url: markets_path do |f| %>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+   <p>
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </p>
+
+  <p>
+    <%= f.label :products %> <br>
+    <%= f.text_area :products %>
+  </p>
+
+  <p>
+    <%= f.label :schedule %> <br>
+    <%= f.text_area :schedule %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<%end%>
